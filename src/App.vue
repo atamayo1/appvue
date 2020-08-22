@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome Anthony to Your Vue.js App"/>
+    <Menu title_izq="Curso" title_dere="Vue" :list="['Inicio', 'Blog', 'Formulario', 'Pagina1', 'Pagina2']" />
+    <Banner title_banner="Bienvenido al Curso de Vue con Anthony Tamayo Ortega" text_btn="IR AL BLOG" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Menu from './components/Menu.vue'
+import Banner from './components/Banner.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Menu,
+    Banner
   }
 }
 </script>
@@ -23,6 +24,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+@import 'assets/css/styles.css';
 </style>
