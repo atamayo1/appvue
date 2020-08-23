@@ -1,7 +1,9 @@
 <template>
     <div id="banner">
         <h1 id="title-banner"><span>{{ title_banner }}</span></h1>
-        <button id="btn-banner" class="fw-500">{{ text_btn }}</button>
+        <router-link :to="'/blog'" class="router-link">
+            <button id="btn-banner" class="fw-500">{{ text_btn }}</button>
+        </router-link>
     </div>
 </template>
 
@@ -41,4 +43,12 @@ export default {
         background-color: rgba(255,255,255,.5);
         border: none;
         }
+    .router-link {
+        color: black;
+        text-decoration: none;
+    }
+    .router-link:hover{
+        color: #60c14d;
+        cursor: pointer;
+    }
 </style>
