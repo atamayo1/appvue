@@ -1,16 +1,20 @@
 <template>
   <div id="home">
-   <HelloWorld title="Este es el titulo hello world del home" />
+    <h1>{{ title }}</h1>
+    <h2>{{ subtitle }}</h2>
   </div>
 </template>
 
 <script>
-import HelloWorld from './HelloWorld.vue'
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  }
+  data(){
+    return{
+      title: "Bienvenidos a VueJS",
+      subtitle: "VueJS subtitulo"
+    }
+  },
+
 }
 </script>
 

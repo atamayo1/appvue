@@ -1,12 +1,14 @@
 <template>
     <div id="menu">
         <nav>
-            <div class="content-logo">
-                <li><img id="logo" alt="Vue logo" src="../assets/logo.png"></li>
-                <li id="title-logo"><strong class="fw-900">{{ title_izq }}</strong>{{ title_dere }}</li>
-            </div>
+            <router-link :to="'/'" class="router-link">
+                <div class="content-logo">
+                    <li><img id="logo" alt="Vue logo" src="../../assets/logo.png"></li>
+                    <li id="title-logo"><strong class="fw-900">{{ title_izq }}</strong>{{ title_dere }}</li>
+                </div>
+            </router-link>
             <div class="content-pages">
-                <li class="item-by-list" v-for="item of list" :key="item">{{ item }}</li>
+                <li class="item-by-list" v-for="item of list" :key="item"><router-link :to="item.link" class="router-link">{{ item.name }}</router-link></li>
             </div>
         </nav>
     </div>
@@ -29,11 +31,8 @@ export default {
 <style scoped>
     #menu {
         border-top: 5px solid #60c14d;
+        height: 14vh;
         }
-    .item-by-list:hover {
-        color: #60c14d;
-        cursor: pointer;
-        }   
     #logo {
         width: 4vw;
         }
@@ -58,4 +57,12 @@ export default {
     .content-pages li {
         margin: 0 1vw;
         }
+    .router-link {
+        color: black;
+        text-decoration: none;
+    }
+    .router-link:hover{
+        color: #60c14d;
+        cursor: pointer;
+    }
 </style>
