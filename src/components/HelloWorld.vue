@@ -1,24 +1,19 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>{{ text }}</h2>
-    <MiComponent title="Este es MiComponent dentro de Hello World" />
+    <h1>{{ title }}</h1>
+    <h2>{{ subtitle }}</h2>
   </div>
 </template>
 
 <script>
-import MiComponent from './MiComponent'
 export default {
   name: 'HelloWorld',
-  components: {
-    MiComponent
-  },
   props: {
-    msg: String
+    title: String,
   },
   data(){
     return {
-      text: "Hola mundo desde el componente HelloWorld"
+      subtitle: "Este es el subtitulo del helloworld home"
       }
   }
 }

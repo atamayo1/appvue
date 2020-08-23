@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <Menu title_izq="Curso" title_dere="Vue" :list="['Inicio', 'Blog', 'Formulario', 'Pagina1', 'Pagina2']" />
-    <Banner title_banner="Bienvenido al Curso de Vue con Anthony Tamayo Ortega" text_btn="IR AL BLOG" />
+        <Menu title_izq="Curso" title_dere="Vue" :list="['Inicio', 'Blog', 'Formulario', 'Pagina1', 'Pagina2']" />
+        <Banner title_banner="Bienvenido al Curso de Vue con Anthony Tamayo Ortega" text_btn="IR AL BLOG" />
+        <router-view></router-view>
   </div>
 </template>
 
@@ -12,7 +13,7 @@ export default {
   name: 'App',
   components: {
     Menu,
-    Banner
+    Banner,
   }
 }
 </script>
