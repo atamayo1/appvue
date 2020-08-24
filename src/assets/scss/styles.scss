@@ -65,21 +65,11 @@
 
   /* Laptop o Ipad Pro Horizontal */
   @media #{$M1440} {
-    #menu {
-      height: 12vh;
-    }
-    #btn-banner {
-      width: 15vw;
-      height: 5vh;
-    }
   }
   /* Tablet Horizontal */
   @media #{$M1199} {
     #btn-banner {
       width: 12vw;
-    }
-    #menu {
-      height: 10vh;
     }
   }
   /* Tablet Vertical */
@@ -87,48 +77,11 @@
     #banner {
         height: 23vh;
     }
-    #title-banner {
-      font-size: 1.5em;
-    }
-    #btn-banner {
-        width: 13vw;
-        height: 4vh;
-        font-size: 0.8em;
-    }
-    #menu {
-      height: 10vh;
-    }
-    #home {
-      .title-home{
-        font-size: 1.5em;
-      }
-      .subtitle-home{
-        font-size: 1.3em;
-      }
-    }
   }
   /* Smartphone Horizontal */
   @media #{$M767} {
-    #btn-banner {
-      width: 14vw;
-      height: 10vh;
-    }
-    #menu {
-      height: 15vh;
-    }
-    #title-banner {
-      font-size: 1.5em;
-    }
     #banner {
       height: 64vh;
-    }
-    #home {
-      .title-home {
-        font-size: 1.5em;
-      }
-      .subtitle-home {
-        font-size: 1.4em;
-      }
     }
   }
   /* Smartphone Vertical */
@@ -138,11 +91,7 @@
       height: 6vh;
       font-size: 0.8em;
     }
-    #title-banner {
-      font-size: 1.5em;
-    }
     #menu {
-      height: 14vh;
       nav {
         margin: 2vh 0vw;
         flex-direction: column;
@@ -160,14 +109,6 @@
           justify-content: center;
           flex-direction: row;
         } 
-      }
-    }
-    #home {
-      .title-home {
-        font-size: 1.5em;
-      }
-      .subtitle-home {
-        font-size: 1.4em;
       }
     }
   }
