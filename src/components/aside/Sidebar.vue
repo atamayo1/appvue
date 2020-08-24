@@ -1,5 +1,5 @@
 <template>
-    <aside id="sidebar">
+    <aside id="sidebar" class="w-50">
         <div id="nav-blog" class="sidebar-item">
             <h3>Puedes hacer esto</h3>
             <a href="#" class="btn btn-success">Crear artículo</a>
