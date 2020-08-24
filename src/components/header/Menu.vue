@@ -28,41 +28,41 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
     #menu {
         border-top: 5px solid #60c14d;
         height: 14vh;
-        }
-    #logo {
-        width: 4vw;
-        }
-    #title-logo {
-        font-size: 20px;
-        }
-    nav {
-        margin: 3vh 14vw;
-        list-style: none;
-        display: flex;
-        flex: 1;
-        justify-content: space-between;
-        }     
-    .content-logo {
-        display: flex;
-        align-items: center;
-        }
-    .content-pages {
-        display: flex;
-        align-items: center;
-        }
-    .content-pages li {
-        margin: 0 1vw;
-        }
-    .router-link {
-        color: black;
-        text-decoration: none;
-    }
-    .router-link:hover{
-        color: #60c14d;
-        cursor: pointer;
+        nav {
+            margin: 3vh 14vw;
+            list-style: none;
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            .router-link {
+                color: black;
+                text-decoration: none;
+            }
+            .router-link:hover{
+                color: #60c14d;
+                cursor: pointer;
+            }
+            .content-logo {
+                display: flex;
+                align-items: center;
+                #logo {
+                    width: 4vw;
+                }
+                #title-logo {
+                    font-size: 20px;
+                }
+            }
+            .content-pages {
+                display: flex;
+                align-items: center;
+                li {
+                    margin: 0 1vw;
+                }
+            }
+        } 
     }
 </style>

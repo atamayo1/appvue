@@ -1,7 +1,7 @@
 <template>
   <div id="home">
-    <h1>{{ title }}</h1>
-    <h2>{{ subtitle }}</h2>
+    <h1 class="title-home">{{ title }}</h1>
+    <h2 class="subtitle-home">{{ subtitle }}</h2>
   </div>
 </template>
 
@@ -18,6 +18,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
 </style>

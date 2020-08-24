@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
     #banner {
         background-color: #60c14d;
         height: 43vh;
@@ -25,7 +25,15 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        .router-link {
+            color: black;
+            text-decoration: none;
         }
+        .router-link:hover{
+            color: #60c14d;
+            cursor: pointer;
+        }
+    }
     #title-banner {
         color: white;
         text-shadow: 2px 2px 2px rgba(0,0,0,.3);
@@ -38,17 +46,9 @@ export default {
         border-radius: 5px;
         cursor: pointer;
         color: gray;
-        }
+    }
     #btn-banner:hover {
         background-color: rgba(255,255,255,.5);
         border: none;
-        }
-    .router-link {
-        color: black;
-        text-decoration: none;
-    }
-    .router-link:hover{
-        color: #60c14d;
-        cursor: pointer;
     }
 </style>
