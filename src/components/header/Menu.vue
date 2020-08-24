@@ -1,6 +1,6 @@
 <template>
     <div id="menu">
-        <nav>
+        <nav class="nav navbar">
             <router-link :to="'/'" class="router-link">
                 <div class="content-logo">
                     <li><img id="logo" alt="Vue logo" src="../../assets/logo.png"></li>
@@ -31,13 +31,10 @@ export default {
 <style lang="scss">
     #menu {
         border-top: 5px solid #60c14d;
-        height: 14vh;
         nav {
-            margin: 3vh 14vw;
+            margin: 2vh 14vw;
             list-style: none;
-            display: flex;
             flex: 1;
-            justify-content: space-between;
             .router-link {
                 color: black;
                 text-decoration: none;
