@@ -1,0 +1,175 @@
+  /*Laptop o Ipad Pro Horizontal*/
+  $M1440: "screen and (max-width : 1440px) and (min-width: 1200)";
+  /*Tablet Horizontal*/
+  $M1199: "screen and (max-width : 1199px) and (min-width: 992px)";
+  /*Tablet Vertical*/
+  $M991: "screen and (max-width : 991px) and (min-width: 768px)";
+  /*Smartphone Horizontal*/
+  $M767: "screen and (max-width: 767px) and (min-width: 576px)";
+  /*Smartphone Vertical*/
+  $M575: "screen and (max-width: 575px)";
+
+  @mixin shadow-0($shadow: none){
+    /*
+    @include shadow-0;
+    */
+    box-shadow: none !important;
+  }
+  @mixin center($horizontal: true, $vertical: true) {
+    /*
+    both
+      @include center;
+    horizontal
+      @include center(true, false);
+    vertical
+      @include center(false, true);
+    */
+    position: absolute;
+  
+    @if ($horizontal and $vertical) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  
+    } @else if ($horizontal) {
+      left: 50%;
+      transform: translate(-50%, 0);
+  
+    } @else if ($vertical) {
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+  @mixin m0p0($margin: 0, $padding: 0){
+    /*
+     @include m0p0;
+     */
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    @include m0p0;
+  }
+  .fw-bold {
+    font-weight: bold;
+  }
+  .fw-bolder {
+    font-weight: bolder;
+  }
+  .fw-900 {
+    font-weight: 900;
+  }
+  .fw-500 {
+    font-weight: 500;
+  }
+
+  /* Laptop o Ipad Pro Horizontal */
+  @media #{$M1440} {
+    #menu {
+      height: 12vh;
+    }
+    #btn-banner {
+      width: 15vw;
+      height: 5vh;
+    }
+  }
+  /* Tablet Horizontal */
+  @media #{$M1199} {
+    #btn-banner {
+      width: 12vw;
+    }
+    #menu {
+      height: 10vh;
+    }
+  }
+  /* Tablet Vertical */
+  @media #{$M991} {
+    #banner {
+        height: 23vh;
+    }
+    #title-banner {
+      font-size: 1.5em;
+    }
+    #btn-banner {
+        width: 13vw;
+        height: 4vh;
+        font-size: 0.8em;
+    }
+    #menu {
+      height: 10vh;
+    }
+    #home {
+      .title-home{
+        font-size: 1.5em;
+      }
+      .subtitle-home{
+        font-size: 1.3em;
+      }
+    }
+  }
+  /* Smartphone Horizontal */
+  @media #{$M767} {
+    #btn-banner {
+      width: 14vw;
+      height: 10vh;
+    }
+    #menu {
+      height: 15vh;
+    }
+    #title-banner {
+      font-size: 1.5em;
+    }
+    #banner {
+      height: 64vh;
+    }
+    #home {
+      .title-home {
+        font-size: 1.5em;
+      }
+      .subtitle-home {
+        font-size: 1.4em;
+      }
+    }
+  }
+  /* Smartphone Vertical */
+  @media #{$M575} {
+    #btn-banner {
+      width: 24vw;
+      height: 6vh;
+      font-size: 0.8em;
+    }
+    #title-banner {
+      font-size: 1.5em;
+    }
+    #menu {
+      height: 14vh;
+      nav {
+        margin: 2vh 0vw;
+        flex-direction: column;
+        .content-logo {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          #logo {
+            width: 10vw;
+          }
+        }
+        .content-pages {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+        } 
+      }
+    }
+    #home {
+      .title-home {
+        font-size: 1.5em;
+      }
+      .subtitle-home {
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  
