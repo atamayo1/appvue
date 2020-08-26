@@ -4,7 +4,7 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import Home from './components/pages/Home.vue'
 import axios from 'axios'
-import ErrorComponent from './components/ErrorComponent.vue'
+import ErrorComponent from './components/pages/ErrorComponent.vue'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
