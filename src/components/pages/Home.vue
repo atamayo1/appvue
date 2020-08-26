@@ -1,7 +1,7 @@
 <template>
   <div id="home" class="mt-3">
     <Section :title="data.title" :info="data.body" />
-    <Sidebar />
+    <Sidebar titleSidebar="PUEDES HACER ESTO" btnArticle="Crear artículo" titleSearch="BUSCADOR" descriptionSearch="Encuentra el artículo que buscas" />
   </div>
 </template>
 

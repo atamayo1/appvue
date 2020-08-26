@@ -20,5 +20,9 @@ export default {
 </script>
 
 <style lang="scss">
-   
+    section {
+        .title {
+            font-size: 2em;
+        }
+    }
 </style>

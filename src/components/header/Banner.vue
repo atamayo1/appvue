@@ -2,7 +2,7 @@
     <div id="banner">
         <h1 id="title-banner"><span>{{ title_banner }}</span></h1>
         <router-link :to="'/blog'" class="router-link">
-            <button class="fw-500 btn btn-light">{{ text_btn }}</button>
+            <button class="btn btn-light">{{ text_btn }}</button>
         </router-link>
     </div>
 </template>
